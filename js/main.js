@@ -37,21 +37,21 @@ function validateForm(){
         alert("ingresa en el formato requerido, con arroba");
        return false;
       }
-      if(passw.length<6){
-      alert("El tamaño mínimo de la contraseña aceptado es de 6 caracteres");
-      return false;
-      }
-       else if(passw == "password" || passw =="123456" || passw == "098754"){
-       alert("Contraseña no segura");
-       return false;
-      }
-
-      if (menuBici.value == 0) { //drop down menu
-		  alert("Por favor selecciona una opción");
-      menuBici.focus();
-      }
-      else {
-       alert("datos enviados");
+      else if(passw.length<6){
+       alert("El tamaño mínimo de la contraseña aceptado es de 6 caracteres");
        return false;
        }
-     }
+        else if(passw == "password" || passw =="123456" || passw == "098754"){
+        alert("Contraseña no segura");
+        /*return false;*/
+       }
+
+       else if (menuBici.value == 0) { //drop down menu
+ 		  alert("Por favor selecciona una opción");
+       menuBici.focus();
+       }
+       else {
+        alert("datos enviados");
+        return false;
+        }
+      }
